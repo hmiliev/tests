@@ -29,7 +29,7 @@ node {
 	      dockerImage = docker.build("hello-world-example:${env.BUILD_NUMBER}", "./hello-world")
 	    }
 	   
-	    stage('Deploy Docker Image'){
+	    stage('Run Docker Image'){
 	      
 	      // deploy docker image to nexus
 			
