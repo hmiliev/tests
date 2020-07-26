@@ -20,7 +20,6 @@ node {
 	    }    
 	  
 	    stage('Build Project') {
-	      //sh "cd hello-world"
 	      // build project via maven
 	      sh "'${mvnHome}/bin/mvn' clean install"
 	    }
@@ -46,5 +45,5 @@ node {
 	      //    dockerImage.push("${env.BUILD_NUMBER}")
 	      //      dockerImage.push("latest")
 	      //  }
-	      
+	    }      
 }
